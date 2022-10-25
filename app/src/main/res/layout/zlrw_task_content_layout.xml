@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/v10_zlrw_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/task_text">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="任务详情"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+        <ImageView
+            android:id="@+id/task_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/confirm_close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/huo"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/fire_icon"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/fire_icon"
+            android:text="上城区钟公庙88号火宅救援"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上城区消防救援站"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:textColor="#54E65A"
+            android:textSize="18dp"
+            android:layout_marginRight="30dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:text="时间:"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:id="@+id/time"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/time"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:text="2022年10月24日16:33:09"
+            android:textColor="#0B8CF3"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:text="描述:"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:id="@+id/task_des"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/task_des"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="火车着火,出动上城区消防救援站1队5车15人,16时38分上城站到场,到时现场明火已经自行扑灭,确认无事后上城站返回."
+            android:textColor="#0B8CF3"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center|left"
+            android:text="进度:"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:id="@+id/jindu"/>
+
+        <!--<com.omsk.maptest.view.TextCircleView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingBottom="50dp"
+            android:text="圆圈"
+            android:textColor="@android:color/darker_gray"/>-->
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/lian"
+            android:layout_toRightOf="@+id/jindu"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/lian"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/tongzhi"
+            android:layout_toRightOf="@+id/lian"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tongzhi"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/chudong"
+            android:layout_toRightOf="@+id/tongzhi"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/chudong"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/daochang"
+            android:layout_toRightOf="@+id/chudong"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/daochang"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/chushui"
+            android:layout_toRightOf="@+id/daochang"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/chushui"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/jieshu"
+            android:layout_toRightOf="@+id/chushui"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/jieshu"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/cheli"
+            android:layout_toRightOf="@+id/jieshu"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/cheli"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/guuidui"
+            android:layout_toRightOf="@+id/cheli"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.omsk.maptest.view.HeadView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/homepage_title_view" />
+    <com.amap.api.maps2d.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/amap_view"
+        android:layout_below="@id/homepage_title_view"/>
+    <com.omsk.maptest.view.UnderView
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/under_circle"
+        />
+
+    <com.omsk.maptest.view.MainZlrwView
+        android:layout_width="550dp"
+        android:layout_height="350dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/main_zlrw_layout"/>
+
+    <com.omsk.maptest.view.MainZlrwTaskView
+        android:layout_width="600dp"
+        android:layout_height="350dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/main_zlrw_detail_layout"/>
+
+    <com.omsk.maptest.view.RwxqView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homepage_title_view"
+        android:layout_marginTop="-10dp"
+        android:id="@+id/rwxq_main"
+        android:visibility="gone"/>/
+
+
+</RelativeLayout>
