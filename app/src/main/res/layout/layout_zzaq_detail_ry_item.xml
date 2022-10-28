@@ -5,45 +5,56 @@
     android:gravity="center_vertical"
     android:orientation="horizontal">
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_weight="1"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         style="@style/zzaq_title"
-        android:paddingStart="10dp"
+        android:paddingStart="40dp"
+        android:id="@+id/zzaq_ry_name"
         android:text="叶孤城"/>
     <TextView
-        android:layout_width="0dp"
-        android:layout_weight="2"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:id="@+id/zzaq_ry_sex"
         style="@style/zzaq_title"
         android:text="男"/>
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="140dp"
         android:layout_weight="1"
-        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_height="50dp"
         style="@style/zzaq_title"
+        android:id="@+id/zzaq_ry_number"
         android:text="1431231232"/>
     <TextView
-        android:layout_width="0dp"
-        android:layout_weight="2"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
         style="@style/zzaq_title"
+        android:id="@+id/zzaq_ry_address"
         android:text="武义县熟溪路消防救援站"/>
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="130dp"
+        android:layout_marginLeft="100dp"
         android:layout_weight="1"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:text="编辑"
+            android:id="@+id/zzaq_ry_edit"
+            style="@style/zzaq_title"
             android:textColor="@color/popup_color"/>
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/zzaq_ry_delete"
             android:text="删除"
             android:layout_marginStart="10dp"
+            style="@style/zzaq_title"
             android:textColor="@color/red"/>
     </LinearLayout>
 </LinearLayout>

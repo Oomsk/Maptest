@@ -1,4 +1,4 @@
-package com.omsk.maptest.view;
+package com.omsk.maptest.mvp.view;
 
 import android.content.Context;
 import android.content.pm.LabeledIntent;

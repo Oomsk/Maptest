@@ -21,6 +21,6 @@
     <style name="zzaq_title">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:gravity">center_vertical</item>
+        <item name="android:gravity">center|left</item>
     </style>
 </resources>

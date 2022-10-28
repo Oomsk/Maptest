@@ -1,4 +1,4 @@
-package com.omsk.maptest.view;
+package com.omsk.maptest.mvp.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,19 +6,23 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
 import com.omsk.maptest.R;
+import com.omsk.maptest.adapter.ZzaqRyAdapter;
+import com.omsk.maptest.mvp.bean.ZzaqRyBean;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.ButterKnife;
 
 public class MainZlrwItemView extends LinearLayout implements View.OnClickListener {
 
     private Context context;
-
-    View ZlrwView,ZlrwTaskView;
 
 
     public MainZlrwItemView(Context context) {
@@ -49,7 +53,6 @@ public class MainZlrwItemView extends LinearLayout implements View.OnClickListen
         addView(view);
 
         Log.w("test", "初始化");
-
 
     }
 

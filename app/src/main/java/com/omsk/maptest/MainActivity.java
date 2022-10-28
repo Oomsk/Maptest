@@ -10,10 +10,12 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amap.api.maps2d.MapView;
 import com.omsk.maptest.event.ZlrwEvent;
 import com.omsk.maptest.event.ZzaqEvent;
+import com.omsk.maptest.mvp.bean.ZzaqRyBean;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -145,12 +147,26 @@ public class MainActivity extends AppCompatActivity {
             under_circle.setVisibility(View.VISIBLE);
       } else if (zzaqEvent.getType() == ZzaqEvent.SHOW_ZZAQ){
             amap_view.setVisibility(View.GONE);
-          under_circle.setVisibility(View.GONE);
+            under_circle.setVisibility(View.GONE);
             rwxq_main.setVisibility(View.VISIBLE);
 
       }
 
+    }
+
+
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent3(ZzaqRyBean zzaqRyBean) {
+
+        System.out.println("名称: " + zzaqRyBean.getName() + "性别: " +zzaqRyBean.getSex());
+
+        Toast.makeText(MainActivity.this,
+                "名称: " + zzaqRyBean.getName() + "性别: " +zzaqRyBean.getSex() + "地址: "+ zzaqRyBean.getAddress()
+                + "联系方式: " + zzaqRyBean.getCode()
+                , Toast.LENGTH_LONG).show();
 
     }
+
 
 }

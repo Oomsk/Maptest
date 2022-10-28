@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--  android:shape 设置形状 ：
+                rectangle 矩形 【默认】
+                oval 椭圆
+                line 直线
+                ring 圆环-->
+    <!--  下面的属性只有在android:shape="ring"时可用：
+    android:innerRadius: 像素类型，内圆的半径 ，10dp。
+    android:innerRadiusRatio: 浮点型，以环的宽度比率来表示内圆的半径。例如，如果android:innerRadiusRatio="3"，表示内圆半径等于环的宽度（即外圆直径）除以3。如已设置android:innerRadius则不需设置本属性
+    android:thickness: 像素类型，环的厚度 ,10dp
+    android:thicknessRatio: 浮点型，以环的宽度比率来表示环的厚度。例如，如果android:thicknessRatio="2"，那么环的厚度就等于环的宽度除以2。如已设置android:thickness则不需设置本属性
+    android:useLevel: 布尔类型，如果当做是LevelListDrawable使用时值为true，否则为false（ 一般情况必须设置为false，不然ring无法显示）。  -->
+
+    <!--  ===============================================================================  -->
+    <!--  ===============================================================================  -->
+    <!--  ===============================================================================  -->
+
+    <!--  4个角统一圆角值  -->
+    <!--    <corners android:radius="5dp" />-->
+    <!-- 4个角 逐一设置圆角值 -->
+    <corners
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="15dp" />
+
+    <!--  android:angle: 整型，渐变的起始角度。0值时表示时钟的九点位置，其值增大表示往逆时针方向旋转。例如值为90表示时钟六点位置，值为180表示时钟三点位置，值为270表示时钟零点/十二点位置
+    android:centerX: 浮点型，圆心的X坐标。当android:type="linear"时不可用
+    android:centerY: 浮点型，圆心的Y坐标。当android:type="linear"时不可用
+    android:gradientRadius: 整型，渐变的半径。当android:type="radial"时才需要设置该属性
+    android:centerColor: 颜色类型，渐变的中间颜色
+    android:startColor: 颜色类型，渐变的起始颜色
+    android:endColor: 颜色类型，渐变的终止颜色
+    android:type: 字符串类型，渐变类型。为linear表示线性渐变（默认值），为radial表示放射渐变（起始颜色就是圆心颜色），为sweep表示滚动渐变（即一个线段以某个端点为圆心做360度旋转）
+    android:useLevel: 布尔类型，设置为true无渐变，false有渐变色。如果要使用LevelListDrawable对象，就要设置为true  -->
+    <gradient
+        android:angle="90"
+        android:endColor="#000000ff"
+        android:startColor="#ffff0000" />
+
+    <!-- 填充颜色-->
+    <padding
+        android:bottom="5dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="5dp" />
+
+    <!--无size节点表示长宽自适应，一般不设置size 节点-->
+    <size
+        android:width="125dp"
+        android:height="45dp" />
+
+    <!--    使用 gradient，solid，谁在后面谁生效-->
+    <solid android:color="@android:color/darker_gray" />
+
+    <!--  width:描边的线宽
+          color:描边的颜色
+          dashWidth:值大于0 ：描边改为虚线线段，单个线段长度
+          dashGap:值大于0：描边改为虚线线段 ，虚线线段的间距-->
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/holo_red_dark"
+        android:dashWidth="5dp"
+        android:dashGap="10dp" />
+</shape>
