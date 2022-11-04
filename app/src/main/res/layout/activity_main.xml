@@ -10,7 +10,7 @@
     <com.amap.api.maps2d.MapView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
+        android:visibility="gone"
         android:id="@+id/amap_view"
         android:layout_below="@id/homepage_title_view"/>
     <com.omsk.maptest.mvp.view.UnderView
@@ -43,7 +43,13 @@
         android:layout_below="@+id/homepage_title_view"
         android:layout_marginTop="-10dp"
         android:id="@+id/rwxq_main"
-        android:visibility="gone"/>/
+        android:visibility="gone"/>
+    <com.omsk.maptest.mvp.view.XxsbView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/homepage_title_view"
+        />
 
 
 </RelativeLayout>

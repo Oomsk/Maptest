@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#09203C">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/xxsb_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/xxsb_tb"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/xxsb_back"
+                android:src="@mipmap/xxsb_back" />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:text="返回"
+                android:layout_centerVertical="true"
+                android:textColor="#00B7F6"
+                android:textSize="15dp"
+                android:layout_toLeftOf="@id/xxsb_back"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/rwsb_jqgk_back">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/xxsb_hz"
+                android:layout_marginTop="10dp"
+                android:id="@+id/xxsb_hz_icon"
+                />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="2022-11-3 15:57:20"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/xxsb_hz_icon"
+                android:layout_marginLeft="10dp"
+                android:text="描述: 货车着火,出动首南消防救援站1队5车15人,1时39分首南站到场,到场时现场明火已经自行扑灭,确认无事后首南站返回."
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/xxsb_hz_icon"
+                android:text="描述: 货车着火,出动首南消防救援站1队"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:id="@+id/rwsb_title"
+                />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/xxsb_hz_icon"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:text="一级"
+                android:gravity="center"
+                android:textColor="#0CD69C"
+                android:background="@mipmap/rrsb_yj"
+                android:id="@+id/rwsb_yj_icon"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/rwsb_yj_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:text="归队"
+                android:gravity="center"
+                android:textColor="#FFF000"
+                android:background="@mipmap/rwsb_gd" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="听录音"
+                android:textColor="#00B7F6"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/rwsb_ly_text"
+                android:layout_marginRight="15dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/rwsb_ly_icon"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                />
+
+
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/rwsb_sb_back">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="上报信息"
+                android:textColor="#00B7F6"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="警情标题"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/rwsb_jq_title_text"/>
+            
+            <EditText
+                android:layout_width="530dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/rwsb_back_jqbt"
+                android:id="@+id/rwsb_jq_title_edit"
+                android:layout_toRightOf="@+id/rwsb_jq_title_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="地址"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/rwsb_dz_title_text"
+                android:layout_below="@+id/rwsb_jq_title_text"/>
+
+            <EditText
+                android:layout_width="530dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/rwsb_back_jqbt"
+                android:layout_marginLeft="70dp"
+                android:id="@+id/rwsb_dj_title_edit"
+                android:layout_below="@id/rwsb_jq_title_edit"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="警情等级"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/rwsb_jqdj_title_text"
+                android:layout_below="@+id/rwsb_dz_title_text"/>
+
+            <Spinner
+                android:layout_width="530dp"
+                android:layout_height="20dp"
+                android:background="@drawable/snipper_bg"
+                android:id="@+id/rwsb_spinner_dj"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/rwsb_dj_title_edit"
+
+
+                android:spinnerMode="dropdown"
+                android:popupBackground="#09203C"
+                android:dropDownWidth="match_parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="类型"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/rwsb_lx_title_text"
+                android:layout_below="@+id/rwsb_jqdj_title_text"/>
+
+            <Spinner
+                android:layout_width="530dp"
+                android:layout_height="20dp"
+                android:background="@drawable/snipper_bg"
+                android:id="@+id/rwsb_spinner_lx"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/rwsb_spinner_dj"
+                android:spinnerMode="dropdown"
+                android:popupBackground="#09203C"
+                android:dropDownSelector="@drawable/selector_item"
+                android:dropDownWidth="match_parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="单位"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/rwsb_dw_title_text"
+                android:layout_below="@+id/rwsb_lx_title_text"/>
+
+            <Spinner
+                android:layout_width="530dp"
+                android:layout_height="20dp"
+                android:background="@drawable/snipper_bg"
+                android:id="@+id/rwsb_spinner_dw"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/rwsb_spinner_lx"
+                android:spinnerMode="dropdown"
+                android:popupBackground="#09203C"
+                android:dropDownSelector="@drawable/selector_item"
+                android:dropDownWidth="match_parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="时间"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/rwsb_sj_title_text"
+                android:layout_below="@+id/rwsb_dw_title_text"/>
+
+            <Spinner
+                android:layout_width="530dp"
+                android:layout_height="20dp"
+                android:background="@drawable/snipper_bg"
+                android:id="@+id/rwsb_spinner_sj"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/rwsb_spinner_dw"
+                android:spinnerMode="dropdown"
+                android:popupBackground="#09203C"
+                android:dropDownSelector="@drawable/selector_item"
+                android:dropDownWidth="match_parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="内容描述"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/rwsb_nr_title_text"
+                android:layout_below="@+id/rwsb_sj_title_text"/>
+
+            <EditText
+                android:layout_width="530dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/rwsb_back_jqbt"
+                android:layout_marginLeft="70dp"
+                android:id="@+id/rwsb_nr_title_edit"
+                android:layout_below="@id/rwsb_spinner_sj"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="受灾人员"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/rwsb_szry_title_text"
+                android:layout_marginLeft="700dp"
+                />
+
+            <EditText
+                android:layout_width="370dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/rwsb_back_jqbt"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rwsb_szry_edit"
+                android:layout_toRightOf="@+id/rwsb_szry_title_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="受灾车辆"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/rwsb_szry_title_text"
+                android:id="@+id/rwsb_szcl_title_text"
+                android:layout_marginLeft="700dp"
+                />
+
+            <EditText
+                android:layout_width="370dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/rwsb_back_jqbt"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rwsb_szcl_edit"
+                android:layout_below="@+id/rwsb_szry_edit"
+                android:layout_toRightOf="@+id/rwsb_szcl_title_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="图片"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/rwsb_szcl_title_text"
+                android:id="@+id/rwsb_tp_title_text"
+                android:layout_marginLeft="700dp"/>
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/rwsb_sc"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/rwsb_pic"
+                android:layout_toRightOf="@+id/rwsb_tp_title_text"
+                android:layout_below="@+id/rwsb_szcl_edit"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="视频"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/rwsb_tp_title_text"
+                android:id="@+id/rwsb_sp_title_text"
+                android:layout_marginLeft="700dp"/>
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/rwsb_sc"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/rwsb_sp"
+                android:layout_toRightOf="@+id/rwsb_sp_title_text"
+                android:layout_below="@+id/rwsb_pic"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="警情进度"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/rwsb_jd_title_text"
+                android:layout_below="@+id/rwsb_nr_title_text"/>
+            
+            <com.omsk.maptest.mvp.view.HorizontalListView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/rwsb_status_list"
+                android:layoutDirection="ltr"
+                android:layout_toRightOf="@+id/rwsb_jd_title_text"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/rwsb_nr_title_edit"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="保存上报"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/rwsb_bc"
+                android:layout_alignParentBottom="true"
+                android:textColor="#00FFFF"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

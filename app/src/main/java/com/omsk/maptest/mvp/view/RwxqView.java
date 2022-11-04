@@ -188,6 +188,11 @@ public class RwxqView extends LinearLayout implements View.OnClickListener, Adap
 
     private void initRy(View view) {
         listView = view.findViewById(R.id.zzaq_detail_listview);
+        
+        
+        
+        
+        
         data = new ArrayList<>();
 
         for (int i = 0; i < 15; i++) {

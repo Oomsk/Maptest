@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/rwsb_spinner_mc"
+        android:text="等级"
+        android:textSize="15dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        />/
+
+</LinearLayout>
